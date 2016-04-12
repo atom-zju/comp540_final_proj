@@ -2,8 +2,9 @@
 this piece of code will generate images_labels.txt in the form of "XXX.png L" (L is the label)
 after creating these files, I ran the command in the tool directory of caffe, which will create a lmdb file for you
 
-./convert_imageset --encode_type="png" /home/atom/cifar10/data/train/ /home/atom/cifar10/mydata/images_labels.txt /home/atom/cifar10/mydata/mycifar10_lmdb
+./convert_imageset --encode_type="png" /home/atom/cifar10/data/train/ /home/atom/cifar10/mydata/images_labels_rep_0.txt /home/atom/cifar10/mydata/mycifar10_rep_0_lmdb
 
+./compute_image_mean -backend=lmdb /home/atom/cifar10/mydata/mycifar10_rep_0_lmdb /home/atom/cifar10/mydata/mean_rep_0.binaryproto
 '''
 import numpy as np
 

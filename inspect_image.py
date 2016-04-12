@@ -5,7 +5,7 @@ import sys
 import os
 
 
-Image_File = '/home/atom/cifar10/data/train/1.png'
+Image_File = '/home/atom/cifar10/data/train/45581.png'
 
 input_image = caffe.io.load_image(Image_File)
 plt.imshow(input_image)
